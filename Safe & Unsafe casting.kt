@@ -5,4 +5,7 @@ fun main() {
     
     val c :Int? = a as? Int
     println("$c")
+    
+    val d :Int = a as Int
+    println("$d")
 }
