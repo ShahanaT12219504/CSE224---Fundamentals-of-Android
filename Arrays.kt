@@ -7,6 +7,4 @@ fun main() {
     println(words.contentToString())
 //     Array of Squares using lambda
     val squares = Array(5) {i -> i * i}
-    println(squares.contentToString())
-//     Accessing elements
 }
