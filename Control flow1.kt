@@ -15,3 +15,34 @@ fun main() {
     
    
 }
+
+
+
+// construct calc using if,else, else if for all arithmetic operators
+fun main(){
+    val a = 50
+    val b = 40
+    val op = "*" 
+    if(op == "+"){
+        println("Sum of $a + $b = ${a + b}")
+        
+    }
+    else if(op == "-"){
+        println("Difference of $a - $b = ${a - b}")
+        
+    }
+    else if(op == "*"){
+        println("Product of $a * $b = ${a * b}")
+        
+    }
+    else if(op == "/"){
+        if(b != 0){
+            println("Division of $a / $b = ${a / b}")
+        }
+        else{
+            println("Error, not divisible by 0")
+        }  
+    }
+    
+    
+}
