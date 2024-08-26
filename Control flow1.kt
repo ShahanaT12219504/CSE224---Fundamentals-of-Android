@@ -16,8 +16,6 @@ fun main() {
    
 }
 
-
-
 // construct calc using if,else, else if for all arithmetic operators
 fun main(){
     val a = 50
@@ -43,6 +41,27 @@ fun main(){
             println("Error, not divisible by 0")
         }  
     }
+  
+}
+
+// Age classification
+fun main(){
+    val age = 65
     
-    
+    if(age < 13){
+        println("Child")
+        
+    }
+    else if(age in 13..19){
+        println("Teenager")
+        
+    }
+    else if(age in 20..64){
+        println("Adult")
+        
+    }
+    else{
+            println("Senior")
+        }  
+
 }
