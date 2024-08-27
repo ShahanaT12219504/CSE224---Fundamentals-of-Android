@@ -1,9 +1,9 @@
 // User defined func
 fun demo() {
-        println("Hello,World!")
+        print("Hello")
     }
     fun main(args: Array<String>){
         demo()//func call
-        println("Main func")
+        print(" Mofo")
    
     }
