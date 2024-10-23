@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+
+        <Button
+            android:id="@+id/Button1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="MediaStore"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Button2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Google"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Button3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="CallLog"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Button4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Contacts"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Button5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Gallery"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/Button6"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Dial"
+            android:textSize="14sp" />
+
+
+</LinearLayout>
