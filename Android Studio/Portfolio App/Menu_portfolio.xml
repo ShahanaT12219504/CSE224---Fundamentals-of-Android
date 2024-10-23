@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="E-mail"
+        android:id="@+id/i1"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:title="Contacts"
+        android:id="@+id/i2"
+        app:showAsAction="collapseActionView"
+        />
+
+    <item
+        android:title="Feedback"
+        android:id="@+id/i3"
+        app:showAsAction="collapseActionView"
+        />
+
+</menu>
