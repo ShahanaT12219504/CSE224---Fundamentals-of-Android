@@ -21,9 +21,21 @@ class MainPermission : AppCompatActivity() {
                 ActivityCompat.requestPermissions(this, arrayOf(android.Manifest.permission.CAMERA),c)
             }
             else{
-                Toast.makeText(this,"Already granted",Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Permission Already granted",Toast.LENGTH_LONG).show()
             }
         }
 
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == c){
+            if(grantResults[0] == PackageManager.PERMISSION_GRANTED){
+                Toast.makeText(this,"Camera permission granted",Toast.LENGTH_SHORT).show()
+            }
+            else{
+                Toast.makeText(this,"Camera permission denied",Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
