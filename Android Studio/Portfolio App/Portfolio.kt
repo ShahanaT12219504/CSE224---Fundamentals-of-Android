@@ -5,14 +5,27 @@ import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 
 class Portfolio : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_portfolio)
+
+        val exitButton = findViewById<Button>(R.id.button)
+        exitButton.setOnClickListener {
+            val b = AlertDialog.Builder(this)
+            b.setTitle("Exit")
+            b.setMessage("Do you want to exit?")
+            b.setPositiveButton("Yes") { dialog, _ -> finish() }
+            b.setNegativeButton("No") { dialog, _ ->dialog.dismiss() }
+            b.setCancelable(false)
+            b.create().show()
+        }
 
         val toolbar: androidx.appcompat.widget.Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -85,4 +98,5 @@ class Portfolio : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 }
